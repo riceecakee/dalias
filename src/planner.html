@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DALIAS</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="../css/planner.css">
+
+  </head>
+
+
+
+<body>
+
+
+<!-----------------SIDEBAR----------------------->
+<nav class="sidebar close">
+  <header>
+      <div class="image-text">
+          <span class="image">
+            <img src="../assets/logo.png" alt="">
+        </span>
+
+          <div class="text logo-text">
+              <span class="name">DALIAS</span>
+              <span class="profession">Digital academy</span>
+          </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+  </header>
+
+  <div class="menu-bar">
+      <div class="menu">
+
+          <ul class="menu-links">
+              <li class="nav-link">
+                  <a href="index.html">
+                      <i class='bx bxs-dashboard icon' ></i>
+                      <span class="text nav-text">Dashboard</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="#" class="active">
+                      <i class='bx bx-calendar icon' ></i>
+                      <span class="text nav-text">Planner</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="assignment.html">
+                      <i class='bx bx-briefcase icon'></i>
+                      <span class="text nav-text">Assignments</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="chat.html" class="msg">
+                      <i class='bx bx-conversation icon' ></i>
+                      <span class="text nav-text">Chats</span>
+                      <span class="badge">5</span>
+                      <span class="disabled-badge">5</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="class.html">
+                      <i class='bx bx-food-menu icon' ></i>
+                      <span class="text nav-text">Classes</span>
+                  </a>
+              </li>
+
+              <li class="nav-link">
+                  <a href="file.html">
+                      <i class='bx bx-folder icon' ></i>
+                      <span class="text nav-text">Files</span>
+                  </a>
+              </li>
+
+          </ul>
+      </div>
+
+      <div class="bottom-content">
+          <li class="">
+              <a href="#">
+                  <i class='bx bx-log-out icon' ></i>
+                  <span class="text nav-text">Logout</span>
+              </a>
+          </li>
+          
+      </div>
+  </div>
+
+</nav>
+
+
+
+<!-----------------MAIN----------------------->
+<section class="home">
+
+    <div class="right">
+        <div class="top">
+            <div class="search">
+                <img src="../assets/search.svg" alt=""/>
+            </div>
+          <div class="icon">
+            <i class='bx bx-bell icon' ></i>
+          </div>
+          <div class="icon">
+            <i class='bx bx-cog icon' ></i>
+          </div>
+          <div class="profile">
+            <img class="img" src="../assets/avatar.jpg" alt="avatar" height="60" width="60"/>
+          </div>
+        </div>
+    </div>
+    
+
+    <div class="header">Planner
+        <span class="date">
+            <i class='bx bxs-chevron-left icon' ></i>
+            16-22, OCTOBER 2022
+            <i class='bx bxs-chevron-right icon' ></i>
+        </span>
+        <span class="all">
+            <i class='bx bx-plus icon'></i>
+            Add Events</span>
+    </div>
+
+    <div class="main">
+        <img src="../assets/line.svg" alt="" class="line" width="1650">
+        <div class="plans">
+            <img src="../assets/plan1.svg" alt="" class="plan1" height="52">
+            <img src="../assets/upcoming.svg" alt="" class="upcoming" height="500">
+            <img src="../assets/plan2.svg" alt="" class="plan2" height="52">
+            <img src="../assets/plan3.svg" alt="" class="plan3" height="52">
+            <img src="../assets/plan4.svg" alt="" class="plan4" height="52">
+            <img src="../assets/plan5.svg" alt="" class="plan5" height="52">
+            <img src="../assets/plan6.svg" alt="" class="plan6" height="52">
+            <img src="../assets/plan7.svg" alt="" class="plan7" height="52">
+            <img src="../assets/plan8.svg" alt="" class="plan8" height="52">
+
+    </div>
+
+</section>
+
+
+<script>
+
+const body = document.querySelector('body'),
+sidebar = body.querySelector('nav'),
+toggle = body.querySelector(".toggle"),
+searchBtn = body.querySelector(".search-box"),
+modeSwitch = body.querySelector(".toggle-switch"),
+modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+sidebar.classList.remove("close");
+})
+
+</script>
+
+</body>
+</html>
